@@ -628,7 +628,7 @@ config_files={
        "data":data["feature_request"],
        "dependency":[]
        },
-".github/wordflows/greetings.yml":{
+".github/workflows/greetings.yml":{
        "data":data["greetings"],
        "dependency":[]
        },
@@ -674,7 +674,7 @@ try:
             if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
                 with open(filepath, "w") as f:
                         if filepath == "CODE_OF_CONDUCT.md":
-                                f.write(config_files[filepath]["data"].format(project_name))
+                                f.write(config_files[filepath]["data"].format(project_name=project_name))
                         elif filepath == "README.md":
                                 f.write(config_files[filepath]["data"].format(project_name=project_name, short_description=shortdescription))
                         elif filepath == "CONTRIBUTING.md":
@@ -683,4 +683,4 @@ try:
             else:
                     print(f"{filepath} is already exists")
 except Exception as e:
-        print(f"error - {e}")
+        raise e
