@@ -661,7 +661,7 @@ config_files={
 import os
 import sys
 try:
-        pargv = sys.argv[1:]
+        argv = sys.argv[1:]
         project_config = ["", "", ""]
         k = 0
         for i in argv:
