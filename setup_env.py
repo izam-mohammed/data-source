@@ -663,7 +663,15 @@ import sys
 try:
         print(sys.argv[1:])
         raise "hai"
-        project_name, repo_name, shortdescription = sys.argv[1:]
+        pargv = sys.argv[1:]
+        project_config = ["", "", ""]
+        k = 0
+        for i in argv:
+                if i=="__":
+                        k += 1
+                else:
+                        project_config[k] += i
+        project_name, repo_name, shortdescription = project_config
         for file_path in config_files:
             if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
                 with open(filepath, "w") as f:
