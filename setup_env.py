@@ -679,7 +679,7 @@ try:
                                 f.write(config_files[filepath]["data"].format(project_name=project_name, short_description=shortdescription))
                         elif filepath == "CONTRIBUTING.md":
                                 f.write(config_files[filepath]["data"].format(project_name=project_name, repo_name=repo_name))
-                        f.write(config_files[filepath])
+                        f.write(config_files[filepath]["data"])
             else:
                     print(f"{filepath} is already exists")
 except Exception as e:
