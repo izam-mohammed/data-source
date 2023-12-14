@@ -658,4 +658,18 @@ config_files={
        }
 }
 
-
+import os
+try:
+        project_name, repo_name, shortdescription = os.argv[1:]
+        for file_path in config_files:
+            if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
+                with open(filepath, "w") as f:
+                        if filepath == "CODE_OF_CONDUCT.md":
+                                f.write(config_files[file_path].format(project_name))
+                        elif filepath == "README.md":
+                                f.write(config_files[file_path].format(project_name=project_name, short_description=shortdescription))
+                        elif filepath == "CONTRIBUTING.md":
+                                f.write(config_files[file_path].format(project_name=project_name, repo_name=repo_name))
+                        f.write(config_files[file_path])
+            else:
+                    print(f"{filename} is already exists")
