@@ -674,11 +674,11 @@ try:
             if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
                 with open(filepath, "w") as f:
                         if filepath == "CODE_OF_CONDUCT.md":
-                                f.write(config_files[filepath].format(project_name))
+                                f.write(config_files[filepath]["data"].format(project_name))
                         elif filepath == "README.md":
-                                f.write(config_files[filepath].format(project_name=project_name, short_description=shortdescription))
+                                f.write(config_files[filepath]["data"].format(project_name=project_name, short_description=shortdescription))
                         elif filepath == "CONTRIBUTING.md":
-                                f.write(config_files[filepath].format(project_name=project_name, repo_name=repo_name))
+                                f.write(config_files[filepath]["data"].format(project_name=project_name, repo_name=repo_name))
                         f.write(config_files[filepath])
             else:
                     print(f"{filepath} is already exists")
