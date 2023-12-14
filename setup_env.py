@@ -673,3 +673,5 @@ try:
                         f.write(config_files[file_path])
             else:
                     print(f"{filename} is already exists")
+except Exception as e:
+        print(f"error - {e}")
