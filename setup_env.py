@@ -661,8 +661,6 @@ config_files={
 import os
 import sys
 try:
-        print(sys.argv[1:])
-        raise "hai"
         pargv = sys.argv[1:]
         project_config = ["", "", ""]
         k = 0
