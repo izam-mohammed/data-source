@@ -625,7 +625,7 @@ config_files={
        "dependency":[]
        },
 ".github/ISSUE_TEMPLATE/feature_request.md":{
-       "data":data["feauture_request"],
+       "data":data["feature_request"],
        "dependency":[]
        },
 ".github/wordflows/greetings.yml":{
