@@ -1,55 +1,3 @@
-config_files={
-"CONTRIBUTING.md":{
-       "data":data["contributing"],
-       "dependency":["project_name", "repo_name"]
-       },
-"README.md":{
-       "data":data["readme"],
-       "dependency":["project_name", "short_description"]
-       },
-"Dockerfile":{
-       "data":data["docker"],
-       "dependency":[]
-       },
-".github/ISSUE_TEMPLATE/bug_report.md":{
-       "data":data["bug_report"],
-       "dependency":[]
-       },
-".github/ISSUE_TEMPLATE/feature_request.md":{
-       "data":data["feauture_request"],
-       "dependency":[]
-       },
-".github/wordflows/greetings.yml":{
-       "data":data["greetings"],
-       "dependency":[]
-       },
-".github/FUNDING.yml":{
-       "data":data["funding"],
-       "dependency":[]
-       },
-".gitignore":{
-       "data":data["gitignore"],
-       "dependency":[]
-       },
-"LICENCE":
-       "data":data["licence"],
-       "dependency":[]
-       },
-"templates/404.html":
-       "data":data["404"],
-       "dependency":[]
-       },
-"CODE_OF_CONDUCT.md":
-       "data":data["code_of_conduct"],
-       "dependency":["project_name"]
-       },
-"SECURITY.md":
-       "data":data["security"],
-       "dependency":[]
-       }
-}
-
-
 data = { "contributing" : """
 
 # Contributing Guidelines
@@ -657,6 +605,57 @@ Thank you for your collaboration in making our project safe and secure.
 
 This document may be subject to changes and updates. It's your responsibility to stay informed about the latest version and content."""
 
+}
+
+config_files={
+"CONTRIBUTING.md":{
+       "data":data["contributing"],
+       "dependency":["project_name", "repo_name"]
+       },
+"README.md":{
+       "data":data["readme"],
+       "dependency":["project_name", "short_description"]
+       },
+"Dockerfile":{
+       "data":data["docker"],
+       "dependency":[]
+       },
+".github/ISSUE_TEMPLATE/bug_report.md":{
+       "data":data["bug_report"],
+       "dependency":[]
+       },
+".github/ISSUE_TEMPLATE/feature_request.md":{
+       "data":data["feauture_request"],
+       "dependency":[]
+       },
+".github/wordflows/greetings.yml":{
+       "data":data["greetings"],
+       "dependency":[]
+       },
+".github/FUNDING.yml":{
+       "data":data["funding"],
+       "dependency":[]
+       },
+".gitignore":{
+       "data":data["gitignore"],
+       "dependency":[]
+       },
+"LICENCE":
+       "data":data["licence"],
+       "dependency":[]
+       },
+"templates/404.html":
+       "data":data["404"],
+       "dependency":[]
+       },
+"CODE_OF_CONDUCT.md":
+       "data":data["code_of_conduct"],
+       "dependency":["project_name"]
+       },
+"SECURITY.md":
+       "data":data["security"],
+       "dependency":[]
+       }
 }
 
 
