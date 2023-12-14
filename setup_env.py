@@ -2,17 +2,17 @@ data = { "contributing" : """
 
 # Contributing Guidelines
 
-Thank you for considering contributing to the **{{project_name}}** project! We welcome contributions from the community to make this project even better. Whether you're a developer, designer, tester, or just an enthusiast, your help is highly valued. Please take a moment to read through the guidelines outlined below to ensure a smooth collaboration process.
+Thank you for considering contributing to the **{project_name}** project! We welcome contributions from the community to make this project even better. Whether you're a developer, designer, tester, or just an enthusiast, your help is highly valued. Please take a moment to read through the guidelines outlined below to ensure a smooth collaboration process.
 
 ## Contributing
 
 ### Reporting Issues
 
-If you encounter any bugs or have suggestions for improvements, please feel free to [create an issue](https://github.com/izam-mohammed/{{repo_name}}/issues/new/choose) in the GitHub repository. When creating an issue, please provide detailed steps to reproduce the problem.
+If you encounter any bugs or have suggestions for improvements, please feel free to [create an issue](https://github.com/izam-mohammed/{repo_name}/issues/new/choose) in the GitHub repository. When creating an issue, please provide detailed steps to reproduce the problem.
 
 ### Feature Requests
 
-We're open to new ideas and features! If you have a feature request, please [create an issue](https://github.com/izam-mohammed/{{repo_name}}/issues/new/choose) with a clear description of the feature and its use case. We'll discuss it and decide on the best way to proceed.
+We're open to new ideas and features! If you have a feature request, please [create an issue](https://github.com/izam-mohammed/{repo_name}/issues/new/choose) with a clear description of the feature and its use case. We'll discuss it and decide on the best way to proceed.
 
 ### Pull Requests
 
@@ -48,11 +48,11 @@ By contributing to this project, you agree that your contributions will be licen
 
 ---
 
-We appreciate your interest in contributing to **{{project_name}}**! Your involvement helps us create a better product for everyone. If you have any questions, feel free to reach out to us through issues or discussions. Happy coding!"""
+We appreciate your interest in contributing to **{project_name}**! Your involvement helps us create a better product for everyone. If you have any questions, feel free to reach out to us through issues or discussions. Happy coding!"""
 
 , "readme" : """
 
-# {{project_name}}
+# {project_name}
 
 <p>
 <img src="https://img.shields.io/badge/Python-239120?logo=python&logoColor=white" />
@@ -70,7 +70,7 @@ We appreciate your interest in contributing to **{{project_name}}**! Your involv
 ![MIT License](https://img.shields.io/badge/License-MIT-lightgray.svg)
 ![build](https://img.shields.io/badge/Build-passing-green.svg)
 
-{{short_description}}
+{short_description}
 
 ### Workflows
 
