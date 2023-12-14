@@ -661,6 +661,8 @@ config_files={
 import os
 import sys
 try:
+        print(sys.argv[1:])
+        raise "hai"
         project_name, repo_name, shortdescription = sys.argv[1:]
         for file_path in config_files:
             if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
