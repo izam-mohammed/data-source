@@ -660,6 +660,10 @@ config_files={
 
 import os
 import sys
+import logging
+
+logging.basicConfig(level=logging.INFO, format="[%(asctime)s]: %(message)s:")
+
 try:
         argv = sys.argv[1:]
         project_config = ["", "", ""]
@@ -679,8 +683,11 @@ try:
                                 f.write(config_files[filepath]["data"].format(project_name=project_name, short_description=shortdescription))
                         elif filepath == "CONTRIBUTING.md":
                                 f.write(config_files[filepath]["data"].format(project_name=project_name, repo_name=repo_name))
-                        f.write(config_files[filepath]["data"])
+                        else:
+                                f.write(config_files[filepath]["data"])
+                        logging.info(f"wrote the file {filepath}")
             else:
-                    print(f"{filepath} is already exists")
+                    logging.info(f"{filepath} is already exists")
 except Exception as e:
+        logging.info(f"error - {e}")
         raise e
