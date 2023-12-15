@@ -427,7 +427,7 @@ reports/"""
 
 
 
-,"licence":"""
+,"license":"""
 MIT License
 
 Copyright (c) 2023 Izam Mohammed
@@ -640,8 +640,8 @@ config_files={
        "data":data["gitignore"],
        "dependency":[]
        },
-"LICENCE":{
-       "data":data["licence"],
+"LICENSE":{
+       "data":data["license"],
        "dependency":[]
        },
 "templates/404.html":{
